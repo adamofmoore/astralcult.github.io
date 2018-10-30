@@ -18,22 +18,36 @@ body {
 
 .logo {
 	position: absolute;
-	top: 50%;
+	top: 33%;
 	left: 0;
 	right: 0;
 	margin: auto;
-	transform: translateY(-50%);  
 	max-width: 40%;
 	animation-delay: 200ms;
 	animation-duration: 1s;
 }
 
+@media only screen and (min-width: 600px) {
+    .logo {
+		top: 50%;
+		transform: translateY(-50%);  
+	}
+}
+
+.footer {
+	position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    left: 0;
+    right: 0;
+}
+
 .social {
 	display: inline-flex;
 	justify-content: center;
-	position: absolute;
-	bottom: 20px;
-	width: 100%;
 	transform: scale(.8);
 	animation-delay: 800ms;
 	animation-duration: 400ms;
